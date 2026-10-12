@@ -4,6 +4,9 @@
     align-items: flex-start;
 
     font-family: "JosefinSans-Light";
-    font-size: 15px;
+    font-size: 16px;
     color: gray;
+
+    background-color: #161012;
+    padding: 10px;
 }

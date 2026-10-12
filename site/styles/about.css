@@ -1,16 +1,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.container p {
     font-family: "JosefinSans-Light";
-    font-size: 18px;
-    width: 600px;
-    text-align: left;
-    color: rgb(138, 130, 130);
+    font-size: 16px;
+    color: gray;
+
+    background-color: #161012;
+    padding: 10px;
 }
