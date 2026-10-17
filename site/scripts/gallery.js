@@ -5,7 +5,7 @@ const nextButton = document.querySelector(".gallery-image-next");
 const previousButton = document.querySelector(".gallery-image-previous");
 
 // Set the total number of images here
-const TOTAL_IMAGES = 70;
+const TOTAL_IMAGES = 75;
 
 let currentImage = 1;
 let totalImages = TOTAL_IMAGES;
