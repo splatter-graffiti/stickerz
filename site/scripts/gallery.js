@@ -5,7 +5,7 @@ const nextButton = document.querySelector(".gallery-image-next");
 const previousButton = document.querySelector(".gallery-image-previous");
 
 // Set the total number of images here
-const TOTAL_IMAGES = 75;
+const TOTAL_IMAGES = 81;
 
 let currentImage = 1;
 let totalImages = TOTAL_IMAGES;
@@ -64,6 +64,19 @@ nextButton.addEventListener("click", function () {
 previousButton.addEventListener("click", function () {
     if (currentImage > 1) {
         loadImage(currentImage - 1);
+    }
+});
+
+// Keyboard navigation
+document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowRight") {
+        if (currentImage < totalImages) {
+            loadImage(currentImage + 1);
+        }
+    } else if (event.key === "ArrowLeft") {
+        if (currentImage > 1) {
+            loadImage(currentImage - 1);
+        }
     }
 });
 
